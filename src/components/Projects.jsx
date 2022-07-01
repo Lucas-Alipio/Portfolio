@@ -1,18 +1,21 @@
 import React from "react";
 import EmBreve from "../assets/projects/EmBreve.jpg";
+import Wheater from "../assets/projects/weather-app.JPG";
 
 const Projects = () => {
   const projects = [
     {
-      id: 0,
-      src: EmBreve,
-    },
-    {
       id: 1,
-      src: EmBreve,
+      src: Wheater,
+      demo: "https://tiny-licorice-62f8e6.netlify.app/",
+      git: "https://github.com/Lucas-Alipio/react-weather-app",
     },
     {
       id: 2,
+      src: EmBreve,
+    },
+    {
+      id: 3,
       src: EmBreve,
     },
   ];
@@ -31,7 +34,7 @@ const Projects = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {projects.map(({ id, src }) => (
+          {projects.map(({ id, src, demo, git }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -39,12 +42,17 @@ const Projects = () => {
                 className="rounded-md cursor-pointer duration-200 hover:scale-110"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110">
-                  Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110">
-                  Code
-                </button>
+                <a href={demo} target="_blank" rel="noreferrer">
+                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110">
+                    Demo
+                  </button>
+                </a>
+
+                <a href={git} target="_blank" rel="noreferrer">
+                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110">
+                    Git
+                  </button>
+                </a>
               </div>
             </div>
           ))}
