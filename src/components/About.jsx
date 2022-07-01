@@ -13,20 +13,18 @@ const About = () => {
         </div>
 
         <p className="text-xl mt-20">
-          I'm starting my career as a developer. Currently I'm enjoying to work
-          on web applications. I'm in my last year for a bachelor's degree in
-          computer engineering. I started this course because I've always loved
-          technology and during my time in college I fell in love with
-          programming.
+          My name is Lucas Antonio Alípio de Souza, I'm 22 years old. I've always liked math
+          and technology, and mainly the world of games and because of that I decided to do Computer Engeneering
+          which now I'm in my last year of college.
+          During my time in here I've learned a lot of things, one of them was programming which I fell in
+          love with. So I decided to be a developer and build a career.
         </p>
         <br />
 
         <p className="text-xl">
-          I'm starting my career as a developer. Currently I'm enjoying to work
-          on web applications. I'm in my last year for a bachelor's degree in
-          computer engineering. I started this course because I've always loved
-          technology and during my time in college I fell in love with
-          programming.
+        I'm looking to test and expand my knowledge in the programming area, both in front-end and 
+        back-end. Currently, I am improving my skills in web development, learning about HTML, CSS, 
+        JavaScript, React and more.
         </p>
         <br />
       </div>

@@ -18,6 +18,18 @@ const Projects = () => {
       id: 3,
       src: EmBreve,
     },
+    {
+      id: 4,
+      src: EmBreve,
+    },
+    {
+      id: 5,
+      src: EmBreve,
+    },
+    {
+      id: 6,
+      src: EmBreve,
+    },
   ];
 
   return (
