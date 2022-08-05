@@ -1,6 +1,8 @@
 import React from "react";
 import EmBreve from "../assets/projects/EmBreve.jpg";
 import Wheater from "../assets/projects/weather-app.JPG";
+import IDrugsWeb from "../assets/projects/iDrugs-web.JPG";
+import IDrugsApi from "../assets/projects/iDrugs-api.JPG";
 
 const Projects = () => {
   const projects = [
@@ -12,11 +14,15 @@ const Projects = () => {
     },
     {
       id: 2,
-      src: EmBreve,
+      src: IDrugsWeb,
+      demo: "https://idrugsweb.herokuapp.com/",
+      git: "https://github.com/Lucas-Alipio/iDrugsWeb",
     },
     {
       id: 3,
-      src: EmBreve,
+      src: IDrugsApi,
+      demo: "https://idrugsapi.herokuapp.com/",
+      git: "https://github.com/Lucas-Alipio/iDrugsAPI",
     },
     {
       id: 4,
@@ -47,13 +53,13 @@ const Projects = () => {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {projects.map(({ id, src, demo, git }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+            <div key={id} className="shadow-md shadow-gray-600 rounded-lg items-end">
               <img
                 src={src}
                 alt=""
                 className="rounded-md cursor-pointer duration-200 hover:scale-110"
               />
-              <div className="flex items-center justify-center">
+              <div className="flex justify-center">
                 <a href={demo} target="_blank" rel="noreferrer">
                   <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110">
                     Demo
